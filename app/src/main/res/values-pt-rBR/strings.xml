@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feed">Início</string>
+    <string name="trending">Top</string>
+    <string name="messages">Mensagens</string>
+    <string name="profile">Perfil</string>
+    <string name="search">Pesquisa</string>
+    <string name="sign_in">Entrar</string>
+    <string name="or">ou</string>
+    <string name="complete_signup">Completar Cadastro</string>
+    <string name="username">Nome de Usuário</string>
+    <string name="repeat_password">Repita a senha</string>
+    <string name="password">Senha</string>
+    <string name="passwords_dismatch">As senhas não batem</string>
+    <string name="require_password">A senha é obrigatória</string>
+    <string name="password_too_weak">Senha muito fraca</string>
+    <string name="empty_email">Email é obrigatório</string>
+    <string name="invalid_email">Entre com um email válido</string>
+    <string name="gender">Sexo</string>
+    <string name="male">Masculino</string>
+    <string name="female">Feminino</string>
+    <string name="birth">Data de nacimento</string>
+    <string name="creating_account">Criando conta</string>
+    <string name="add_a_picture">Adcione uma foto</string>
+    <string name="create_account">Ainda não tem uma conta? Cadastre-se aqui!</string>
+    <string name="sup_fb">Entrar com o Facebook</string>
+    <string name="age">Idade</string>
+    <string name="like">Curtir</string>
+    <string name="type_something">Digite algo legal...</string>
+    <string name="create_shipp">Criar Shipp</string>
+    <string name="all">Tudo</string>
+    <string name="following">Seguindo</string>
+    <string name="follow">Seguir</string>
+    <string name="email_pass_error">Email e/ou senha incorretos</string>
+    <string name="loginig">Entrando...</string>
+    <string name="hour_ago">Há %d hora</string>
+    <string name="hours_ago">Há %d horas</string>
+    <string name="minutes_ago">Há %d minutos</string>
+    <string name="just_now">Agora</string>
+    <string name="days_ago">Há %d dias</string>
+    <string name="years">%d anos</string>
+    <string name="done">Feito</string>
+    <string name="shipp_created_successfully">Shipp criado com sucesso</string>
+    <string name="country">País</string>
+    <string name="fetching_data">Obtendo dados...</string>
+    <string name="loging_fb">Conectando com Facebook</string>
+    <string name="fb_login_error">Tente novamente</string>
+    <string name="wire_strange">Sua conexão  está ok? Tente novamente.</string>
+    <string name="comments">Comentários</string>
+    <string name="respond">RESPONDER</string>
+    <string name="your_comment">Seu comentário</string>
+    <string name="comment">Comentar</string>
+    <string name="error">Erro</string>
+    <string name="error_try_again">Houve um erro. Tente novamente, por favor.</string>
+    <string name="action_settings">Configurações</string>
+    <string name="shipp_summaries">%1$d shippam, %2$d não shippam e %3$d comentários.</string>
+    <string name="people">Pessoas</string>
+    <string name="order_results_by">Ordenar resultados por</string>
+    <string name="range_results_for">Raio dos resultados</string>
+    <string name="country_of_results">País dos resultados</string>
+    <string name="location">Localização</string>
+    <string name="placeholder_location">São Paulo, SP</string>
+    <string name="location_explain">Digite sua localização</string>
+    <string name="country_spinner_help">Selecione seu país</string>
+    <string name="username_holder">Digite seu nome</string>
+    <string name="placeholder_username">João da Silva</string>
+    <string name="birth_holder">Digite sua data de nascimento</string>
+    <string name="bio_holder">Seus interesses, objetivos, desejos...</string>
+    <string name="email_holder">Digite seu email</string>
+    <string name="audio_not_avaliable">Audio não está mais disponível</string>
+    <string name="yesterday">Ontem</string>
+    <string name="today">Hoje</string>
+    <string name="type_here">Digite aqui</string>
+    <string name="conversation">Conversas</string>
+    <string name="reply_to"><![CDATA[Reponder para <b>%s</b>]]></string>
+    <string name="pick_country">Selecione outro país</string>
+    <string name="my_country_formatted">Meu país: %s</string>
+    <string name="world_wide">Mundo todo</string>
+    <string name="my_country">Meu país</string>
+    <string name="miles180">200km</string>
+    <string name="my_city">Minha cidade</string>
+    <string name="recommended">Recomendado</string>
+    <string name="popular">Popular</string>
+    <string name="controversial">Controverso</string>
+    <string name="new_">Novo</string>
+    <string name="cancel">Cancelar</string>
+    <string name="sure_logoff">Você está prestes a sair</string>
+    <string name="terms_of_use">Termos de Uso</string>
+    <string name="about">Acerca</string>
+    <string name="delete_account">Deletar conta</string>
+    <string name="log_off">Sair</string>
+    <string name="private_perfil">Perfil Privado</string>
+    <string name="title_activity_setting">Preferências</string>
+    <string name="followers">Seguidores</string>
+    <string name="info">Informação</string>
+    <string name="activity">Atividade</string>
+    <string name="following_count">%s seguindo</string>
+    <string name="follower_count">%s seguidores</string>
+    <string name="username_too_short">Nome de usuário muito curto</string>
+    <string name="invalid_date">Insira uma data válida</string>
+    <string name="city_or_country_missing">Selecione uma cidade</string>
+    <string name="location_error">Localizção não disponível</string>
+    <string name="password_holder">Insira uma senha segura</string>
+    <string name="picture">Foto</string>
+    <string name="preview">Pré-visualizar</string>
+    <string name="block_user">Blouear usuário</string>
+    <string name="delete_chat">Apagar conversa</string>
+    <string name="silence_for">Silenciar por</string>
+    <string name="see_media">Ver mídia</string>
+    <string name="go_to_profile">Ir para o perfil</string>
+    <string name="delete">Apagar</string>
+    <string name="image_not_avaliable">Imagem não disponível</string>
+    <string name="silence">Silenciar</string>
+    <string name="user_muted_successfully">Conversa silenciada com sucesso</string>
+    <string name="media_shared_with">Mídia</string>
+    <string name="image">Imagem</string>
+    <string name="ooops">Ooops! Desculpe, nenhum resultado foi encontrado.</string>
+    <string name="interests">Interesses</string>
+    <string name="notifications">Notificações</string>
+    <string name="and"> e </string>
+    <string name="people_suggest">Pessoas sugeridas</string>
+    <string name="sending">Enviando...</string>
+    <string name="email_not_sent">O email não está vinculado com nenhuma conta</string>
+    <string name="email_sent">O email foi eviado. Veja sua caixa de mensagens!</string>
+    <string name="reset_password">Refefinir senha</string>
+    <string name="send">enviar</string>
+    <string name="forgot_my_pass">Esqueci minha senha</string>
+    <string name="got_it">Entendi</string>
+    <string name="collide_account_error">Já tem uma conta associada a esse email mas ela não está linkada com essa conta do Facebook. Por favor, faça login com seu email e depois conecte sua conta com esta conta do Facebook.</string>
+    <string name="try_again">Tentar novamente</string>
+    <string name="shipp_created_to_format"><![CDATA[<b>%s</b> criou um shipp entre <b>%s</b> e <b>%s</b>]]></string>
+    <string name="user_liked_to_format"><![CDATA[<b>%s</b> shippa <b>%s</b> e <b>%s</b>]]></string>
+    <string name="user_disliked_to_format"><![CDATA[<b>%s</b> não shippa  <b>%s</b> e <b>%s</b>]]></string>
+    <string name="network_error">Houve um erro na conexão...Tente novamente</string>
+    <string name="forgot_password">Esqueceu sua senha?</string>
+    <string name="later">Depois</string>
+    <string name="started_follow_to_format">%s começou a te seguir</string>
+    <string name="you">Você</string>
+    <string name="pick_a_picture">Selecione uma imagem</string>
+    <string name="shipp_shared">Shipp compartilhado com sucesso!</string>
+    <string name="report">Reportar</string>
+    <string name="feed_is_empty">Seu feed está vazio</string>
+    <string name="follow_people">Seguir pessoas</string>
+    <string name="like_shipp"><![CDATA[ e mais <b>%d</b> shippam  <b>%s</b> e <b>%s</b>]]></string>
+    <string name="unlike_shipp"><![CDATA[ e mais <b>%d</b> não shippam  <b>%s</b> e <b>%s</b>]]></string>
+    <string name="commented_shipp"><![CDATA[ e mais <b>%d</b> comentaram o shipp de <b>%s</b> e <b>%s</b>]]></string>
+
+    <plurals name="comments_plural">
+        <item quantity="one"><![CDATA[comentou no shipp de <b>%s</b> e <b>%s</b>]]></item>
+        <item quantity="other"><![CDATA[comentaram no shipp de <b>%s</b> e <b>%s</b>]]></item>
+    </plurals>
+    <plurals name="like_plural" >
+        <item quantity="one"> <![CDATA[ shippa <b>%s</b> e <b>%s</b>]]> </item>
+        <item quantity="other"> <![CDATA[ shippam <b>%s</b> e <b>%s</b>]]></item>
+    </plurals>
+    <plurals name="unlike_plural" >
+        <item quantity="one"> <![CDATA[ não shippa <b>%s</b> e <b>%s</b>]]> </item>
+        <item quantity="other"> <![CDATA[ não shippam <b>%s</b> e <b>%s</b>]]></item>
+    </plurals>
+    <string name="accepted_follow_to_format"><![CDATA[<b>%s</b> aceitou sua solicitação]]></string>
+    <string name="edit">Editar</string>
+    <string name="change_profile_pic">Alterar foto de perfil</string>
+    <string name="update_picture_fail_error">Erro ao atualizar sua foto de perfil</string>
+    <string name="photo_updated">Foto de perfil atualizada!</string>
+    <string name="save">Salvar</string>
+    <string name="bio_updated">Bio atualizada</string>
+    <string name="confirm_delete_shipp">Você realmente deseja apagar este shipp?</string>
+    <string name="yes">Sim!</string>
+    <string name="filter_by">Filtrar por</string>
+    <string name="only_friends">Apenas amigos</string>
+    <string name="filte">Filtrar</string>
+    <string name="apply">Aplicar</string>
+    <string name="creating_shipp">Só um momento...</string>
+    <string name="random">Estou com sorte</string>
+    <string name="support">Suporte</string>
+    <string name="other_settings">Outras configurações</string>
+    <string name="account_settings">Configurações da conta</string>
+    <string name="pay_some_coffee">Pague-nos um café</string>
+    <string name="privacy_policy">Política de Privicidade</string>
+    <string name="user_agreement">Concordo com os Termos de Servico e Política de Privacidade</string>
+    <string name="allow">Aceitar</string>
+    <string name="pending">Pendente</string>
+    <string name="user_pending"><![CDATA[<b>%s</b> quer te seguir]]></string>
+    <string name="accept">Aceitar</string>
+    <string name="channel_name">Mensagens</string>
+    <string name="accepted">Aceito</string>
+    <string name="shared_to_format"><![CDATA[<b>%s</b> compartilhou o shipp de <b>%s</b> e <b>%s</b>]]></string>
+    <string name="long_press_to_share">Para compartilhar pressione o botão compartilhar</string>
+    <string name="sharing_shipp">Compartilhando ship...</string>
+    <string name="must_follow_to_pick">Você não pode selecionar esta usuário sem seguí-lo primeiro.</string>
+
+    <string-array name="type_select_results">
+        <item>Popular</item>
+        <item>Novo</item>
+        <item>Recomendado</item>
+        <item>Controverso</item>
+        <item>Esquecido</item>
+    </string-array>
+    <string-array name="silence_array">
+        <item>Não silenciar</item>
+        <item>30 minutos</item>
+        <item>2 horas</item>
+        <item>6 horas</item>
+        <item>12 horas</item>
+        <item>Um dia</item>
+        <item>Um semana</item>
+        <item>Um ano</item>
+        <item>Para sempre</item>
+    </string-array>
+    <string name="connect_fb">Conectar com o Facebook</string>
+    <string name="disconnect">Desconectar</string>
+    <string name="connected_as">Conectado como %s</string>
+    <string name="name_required"><b>Hint:</b> Para a pesquisa de shipps insira um nome</string>
+    <string name="position">%dº Lugar</string>
+    <string name="w_ago">%dsem</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shipp_user_search_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/small_padding"
+            android:weightSum="30">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/shipp_user_search_tiet_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="27"
+                android:hint="@string/search"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <ImageView
+                android:id="@+id/shipp_user_search_iv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_search_white" />
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:paddingStart="160dp"
+        android:paddingEnd="160dp"
+        android:layout_height="match_parent"
+        android:indeterminate="true"
+        android:scaleY="1"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

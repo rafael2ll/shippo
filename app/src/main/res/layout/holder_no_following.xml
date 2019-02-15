@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/ic_sad_face"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textColor="@color/grey_400"
+        android:text="@string/feed_is_empty"
+        android:padding="@dimen/small_padding"
+        android:id="@+id/textView"
+        android:textSize="20sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="@dimen/xxxlarge_padding"
+        app:cardBackgroundColor="@color/white"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/medium_padding"
+                android:id="@+id/image_view_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_follow_primary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAllCaps="true"
+                android:paddingStart="@dimen/small_padding"
+                android:paddingTop="@dimen/medium_padding"
+                android:id="@+id/text_view_button_error"
+                android:paddingBottom="@dimen/medium_padding"
+                android:paddingEnd="@dimen/medium_padding"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/follow_people"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

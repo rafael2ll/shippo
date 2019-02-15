@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/xlarge_padding"
+        android:text="Create Account"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/acitvity_signup_views"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:visibility="visible">
+
+        <com.ft.shippo.utils.CircleViewPagerIndicator
+            android:id="@+id/circle_page_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:ci_drawable="@drawable/red_radius"
+            app:ci_drawable_unselected="@drawable/white_radius"
+            app:ci_height="5dp"
+            app:ci_width="5dp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_weight="9"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_signup_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/creating_account"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+</LinearLayout>

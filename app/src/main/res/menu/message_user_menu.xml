@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_item_show_perfil"
+        android:icon="@drawable/ic_share_gray"
+        android:title="@string/go_to_profile"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_item_show_media"
+        android:icon="@drawable/ic_gallery"
+        android:title="@string/see_media"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/menu_item_silence"
+        android:icon="@drawable/ic_volume_silent"
+        android:title="@string/silence_for"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/menu_item_block"
+        android:icon="@drawable/ic_lock_darker"
+        android:title="@string/block_user"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/menu_item_delete"
+        android:icon="@drawable/ic_share_gray"
+        android:title="@string/delete_chat"
+        app:showAsAction="withText" />
+</menu>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        app:srcCompat="@drawable/ic_ghost"
+        android:layout_centerInParent="true"
+        android:layout_height="100dp" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:indeterminate="true"
+        android:indeterminateBehavior="repeat"
+        android:visibility="gone" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/shipp_find_empty"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="50dp"
+            app:srcCompat="@drawable/ic_ghost"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:padding="@dimen/medium_padding"
+            android:textColor="@color/grey_500"
+            android:text="@string/name_required"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

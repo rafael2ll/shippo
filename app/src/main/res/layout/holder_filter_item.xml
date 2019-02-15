@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/small_padding"
+    android:weightSum="15">
+
+    <ImageView
+        android:id="@+id/holder_filter_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_padding"
+        android:maxHeight="40dp"
+        android:maxWidth="40dp"
+        android:padding="@dimen/small_padding"
+        app:srcCompat="@drawable/ic_public_grey_700_24dp" />
+
+    <TextView
+        android:id="@+id/holder_filter_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small_padding"
+        android:text="Brazil"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/grey_800"
+        android:textSize="17sp" />
+</LinearLayout>

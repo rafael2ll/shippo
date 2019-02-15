@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="end"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/holder_message_iv_selected"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_cancel_accent" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/small_padding"
+        android:layout_marginStart="@dimen/small_padding"
+        android:layout_marginTop="@dimen/xsmall_padding"
+        app:cardBackgroundColor="#e0e0e0"
+        app:cardCornerRadius="@dimen/medium_padding"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_padding">
+
+            <android.support.text.emoji.widget.EmojiAppCompatTextView
+                android:id="@+id/holder_message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="250dp"
+                android:padding="@dimen/small_padding"
+                android:text="@string/placeholder"
+                android:textColor="@color/grey_800"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/holder_message_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/holder_message_text"
+                android:layout_toEndOf="@id/holder_message_text"
+                android:paddingEnd="@dimen/small_padding"
+                android:paddingTop="@dimen/small_padding"
+                android:text="@string/time_placeholder"
+                android:textColor="@color/grey_700"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/holder_message_iv_sent_state"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        app:srcCompat="@drawable/ic_watch_later" />
+</LinearLayout>

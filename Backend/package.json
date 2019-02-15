@@ -1,0 +1,33 @@
+{
+  "name": "shippobackend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "engines": {
+    "node": "8.9.4"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^1.5.2",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "firebase": "^4.9.1",
+    "firebase-admin": "^5.8.2",
+    "jade": "~1.11.0",
+    "less-middleware": "~2.2.1",
+    "mongoose": "latest",
+    "mongoose-paginate": "^5.0.3",
+    "morgan": "~1.9.0",
+    "multer": "^1.3.0",
+    "mysql": "latest",
+    "node-gcm": "^0.14.10",
+    "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "mocha": "^5.0.0",
+    "should": "^13.2.1"
+  }
+}

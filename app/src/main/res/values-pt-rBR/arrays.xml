@@ -1,0 +1,11 @@
+<resources>
+    <string-array name="picture_array">
+        <item>Selecionar uma foto local</item>
+        <item>Remover foto</item>
+    </string-array>
+    <string-array name="picture_fb_array">
+        <item>Usar foto do Facebook</item>
+        <item>Selecione uma foto local</item>
+        <item>Remover foto</item>
+    </string-array>
+</resources>

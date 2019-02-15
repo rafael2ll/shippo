@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".holders.ShippHolder">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_padding"
+        android:baselineAligned="false"
+        app:cardBackgroundColor="@color/grey_100"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="0dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/header"
+                android:visibility="visible"
+                android:theme="@style/YellowBubble"
+                android:paddingStart="@dimen/medium_padding"
+                android:paddingEnd="@dimen/medium_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:id="@+id/trending_trending_shipp_crown"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_crown"
+                    android:layout_height="60dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:background="?attr/bubble_color"
+                    android:id="@+id/trending_trending_shipp_crown_left"
+                    android:layout_toStartOf="@id/trending_trending_shipp_crown"
+                    android:layout_centerVertical="true"
+                    android:layout_height="2dp"/>  
+                <View
+                    android:layout_width="match_parent"
+                    android:id="@+id/trending_trending_shipp_crown_right"
+                    android:background="?attr/bubble_color"
+                    android:layout_toEndOf="@id/trending_trending_shipp_crown"
+                    android:layout_centerVertical="true"
+                    android:layout_height="2dp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/header"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:weightSum="30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="3º"
+                    android:padding="@dimen/small_padding"
+                    android:textSize="20sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:id="@+id/trending_shipp_tv_position"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:weightSum="31">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/left_card_shipp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            app:cardCornerRadius="4dp"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardElevation="4dp"
+                            app:cardPreventCornerOverlap="true">
+
+                            <LinearLayout
+                                android:id="@+id/trending_shipp_ll_user1"
+                                android:layout_width="match_parent"
+                                android:layout_height="240dp"
+                                android:layout_gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/trending_shipp_tv_p1_country"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/small_padding"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/trending_shipp_civ_p1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="140dp"
+                                    android:padding="@dimen/xlarge_padding"
+                                    app:civ_border_color="@color/white"
+                                    app:civ_border_width="2dp"
+                                    app:civ_circle_background_color="@color/white"
+                                    app:srcCompat="@drawable/ic_boy_15" />
+
+                                <TextView
+                                    android:id="@+id/trending_shipp_tv_p1_age"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/age"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+                                <android.support.text.emoji.widget.EmojiAppCompatTextView
+                                    android:id="@+id/trending_shipp_tv_p1_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:padding="@dimen/small_padding"
+                                    android:text="@string/username"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/right_card_shipp"
+                            android:layout_width="0dp"
+                            android:background="@color/white"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="15"
+                            app:cardCornerRadius="4dp"
+                            app:cardElevation="4dp"
+                            app:cardPreventCornerOverlap="true">
+
+                            <LinearLayout
+                                android:id="@+id/trending_shipp_ll_user2"
+                                android:layout_width="match_parent"
+                                android:layout_height="240dp"
+                                android:layout_gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/trending_shipp_tv_p2_country"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/small_padding"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/trending_shipp_civ_p2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="140dp"
+                                    android:padding="@dimen/xlarge_padding"
+                                    app:civ_border_color="@color/white"
+                                    app:civ_border_width="2dp"
+                                    app:civ_circle_background_color="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/trending_shipp_tv_p2_age"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:text="@string/age"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+
+                                <android.support.text.emoji.widget.EmojiAppCompatTextView
+                                    android:id="@+id/trending_shipp_tv_p2_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:padding="@dimen/small_padding"
+                                    android:text="@string/username"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/xxlarge_padding">
+
+                        <ImageView
+                            android:id="@+id/bubble"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="30dp"
+                            app:srcCompat="@drawable/ic_bubble" />
+
+                        <ImageView
+                            android:id="@+id/shipp_bubble1_helper"
+                            android:layout_width="10dp"
+                            android:layout_height="30dp"
+                            android:layout_alignStart="@id/bubble"
+                            android:layout_centerVertical="true"
+                            android:src="@color/grey_400" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="55dp">
+
+                        <ImageView
+                            android:id="@+id/bubble2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="30dp"
+                            app:srcCompat="@drawable/ic_bubble" />
+
+                        <ImageView
+                            android:id="@+id/shipp_bubble2_helper"
+                            android:layout_width="10dp"
+                            android:layout_height="25dp"
+                            android:layout_alignEnd="@id/bubble2"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:src="@color/grey_200" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/xxlarge_padding"
+                        android:layout_marginStart="7dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/bubble3"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="-20dp"
+                            android:theme="@style/BlueBubble"
+                            app:srcCompat="@drawable/ic_cirle_white" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/xxlarge_padding"
+                        android:layout_marginEnd="7dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/bubble4"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="-20dp"
+                            android:theme="@style/BlueBubble"
+                            app:srcCompat="@drawable/ic_cirle_white" />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/body"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/trending_shipp_tv_summaries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/medium_padding"
+                    android:text="@string/shipp_summaries" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:weightSum="40">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="20"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/linear_layout_owner"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/medium_padding"
+                    android:layout_height="match_parent">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="35dp"
+                        android:id="@+id/trending_shipp_civ_owner"
+                        android:layout_height="35dp" />
+                    <TextView
+                        android:id="@+id/trending_shipp_tv_owner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/grey_600"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/small_padding" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_weight="20"
+                    android:orientation="horizontal"
+                    android:weightSum="40">
+                    <ImageView
+                        android:id="@+id/trending_shipp_iv_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:padding="@dimen/medium_padding"
+                        app:srcCompat="@drawable/ic_thumb_up" />
+
+                    <ImageView
+                        android:id="@+id/trending_shipp_iv_unlike"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:padding="@dimen/medium_padding"
+                        app:srcCompat="@drawable/ic_thumb_down" />
+
+                    <ImageView
+                        android:id="@+id/trending_shipp_iv_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="@dimen/medium_padding"
+                        app:srcCompat="@drawable/ic_comment_grey" />
+
+                    <ImageView
+                        android:id="@+id/trending_shipp_iv_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="@dimen/medium_padding"
+                        app:srcCompat="@drawable/ic_share_gray" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

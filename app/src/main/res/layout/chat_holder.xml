@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/small_padding"
+    android:weightSum="20">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chat_holder_civ_pic"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/small_padding"
+        android:layout_weight="2.5"
+        android:src="@color/grey_700" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="13"
+        android:orientation="vertical">
+
+        <android.support.text.emoji.widget.EmojiAppCompatTextView
+            android:id="@+id/chat_holder_tv_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <ImageView
+                android:id="@+id/chat_holder_iv_content_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"/>
+
+            <android.support.text.emoji.widget.EmojiAppCompatTextView
+                android:id="@+id/chat_holder_tv_last_message"
+                android:layout_width="0dp"
+                android:ellipsize="marquee"
+                android:layout_height="wrap_content"
+                android:layout_weight="18"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4.5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/chat_holder_tv_last_message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_padding"/>
+
+        <TextView
+            android:id="@+id/chat_holder_tv_unread_count"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

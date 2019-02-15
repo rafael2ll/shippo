@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_includer"
+        layout="@layout/toolbar"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_ghost"
+        android:layout_height="100dp" />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <include
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/error_view_include"
+        android:visibility="gone"
+        layout="@layout/holder_no_following"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/large_padding"
+        android:visibility="visible"
+        app:fabSize="normal"
+        app:layout_anchor="@id/recycler_view"
+        app:layout_anchorGravity="bottom|end|right"
+        app:layout_behavior="com.ft.shippo.utils.FabBehaviour"
+        app:srcCompat="@drawable/ic_create_white" />
+
+</android.support.design.widget.CoordinatorLayout>

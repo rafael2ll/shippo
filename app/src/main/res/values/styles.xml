@@ -1,0 +1,99 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/grey_700</item>
+        <item name="android:textColorSecondary">@color/grey_700</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--    <item name="android:fontFamily">@string/font_family_medium</item> -->
+    </style>
+
+    <style name="WhiteTextInputLayoutTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="FBTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorAccent">@color/dark_blue</item>
+    </style>
+
+    <style name="SearchTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/grey_700</item>
+        <item name="android:textColorSecondary">@color/grey_700</item>
+    </style>
+
+    <style name="SearchTabAppearance" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TransparentTextAppearance" parent="SearchTabAppearance">
+        <item name="android:textColor">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyDiscreteSeekBar" parent="Widget.AppCompat.SeekBar.Discrete">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="tickMark">@drawable/ic_cirle_red</item>
+    </style>
+
+    <style name="BlueBubble" parent="AppTheme">
+        <item name="bubble_color">@color/blue</item>
+    </style>
+    <style name="RedBubble" parent="AppTheme">
+        <item name="bubble_color">@color/colorPrimary</item>
+    </style>
+    <style name="GreenBubble" parent="AppTheme">
+    <item name="bubble_color">@color/green_400</item>
+    </style>
+    <style name="CianBubble" parent="AppTheme">
+        <item name="bubble_color">@color/cyan_400</item>
+    </style>
+    <style name="PurpleBubble" parent="AppTheme">
+        <item name="bubble_color">@color/purple_400</item>
+    </style>
+    <style name="PinkBubble" parent="AppTheme">
+        <item name="bubble_color">@color/pink_400</item>
+    </style>
+    <style name="YellowBubble" parent="AppTheme">
+        <item name="bubble_color">@color/yellow_400</item>
+    </style>
+    <style name="BrownBubble" parent="AppTheme">
+        <item name="bubble_color">@color/brown_600</item>
+    </style>
+    <style name="BlackBubble" parent="AppTheme">
+        <item name="bubble_color">@color/grey_900</item>
+    </style>
+    <style name="OrangeBubble" parent="AppTheme">
+        <item name="bubble_color">@color/orange_400</item>
+    </style>
+    <style name="Grey200Bubble" parent="AppTheme">
+        <item name="bubble_color">@color/grey_200</item>
+    </style>
+
+    <style name="WhiteBubble" parent="AppTheme">
+        <item name="bubble_color">@color/white</item>
+    </style>
+
+    <style name="darkTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/grey_900</item>
+    </style>
+
+    <style name="AppTheme.White" parent="AppTheme">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+</resources>

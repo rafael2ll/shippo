@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ft.shippo.MainActivity">
+
+    <item
+        android:id="@+id/trending_menuitem"
+        android:icon="@drawable/ic_trending_up_white"
+        android:title="@string/trending" />
+    <item
+        android:id="@+id/messages_menuitem"
+        android:icon="@drawable/ic_chat_white"
+        android:title="@string/messages" />
+    <item
+        android:id="@+id/feed_menuitem"
+        android:icon="@drawable/ic_feed_white"
+        android:title="@string/feed" />
+    <item
+        android:id="@+id/profile_menuitem"
+        android:icon="@drawable/ic_account_box_white"
+        android:title="@string/profile" />
+    <item
+        android:id="@+id/settings_menuitem"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/action_settings" />
+</menu>

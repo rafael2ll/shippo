@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:color="@color/red_A200"/>
+    <item android:color="@color/blue_A200"/>
+    <item android:color="@color/green_A200"/>
+    <item android:color="@color/yellow_A200"/>
+    <item android:color="@color/red_A200"/>
+    <item android:color="@color/cyan_A200"/>
+    <item android:color="@color/pink_A200"/>
+    <item android:color="@color/purple_A200"/>
+</selector>

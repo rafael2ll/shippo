@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="end"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <ImageView
+        android:id="@+id/holder_message_image_selected"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_cancel_accent" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/small_padding"
+        android:layout_marginStart="@dimen/small_padding"
+        android:layout_marginTop="@dimen/xsmall_padding"
+        android:layout_weight="7"
+        app:cardBackgroundColor="@color/dirty_white"
+        app:cardCornerRadius="@dimen/small_padding"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:id="@+id/holder_message_image_iv_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:src="@color/grey_500" />
+
+            <LinearLayout
+                android:id="@+id/holder_message_image_upload_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#C9424242"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ProgressBar
+                    android:id="@+id/holder_message_image_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/WhiteTextInputLayoutTheme"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/holder_message_image_upload_iv"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="?attr/selectableItemBackground"
+                    app:srcCompat="@drawable/ic_file_upload_white" />
+
+                <TextView
+                    android:id="@+id/holder_message_image_upload_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="180KB"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/holder_message_image_tv_sent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:background="#36424242"
+                android:padding="@dimen/small_padding"
+                android:text="12:25"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/holder_message_image_iv_send_state"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_watch_later" />
+</LinearLayout>

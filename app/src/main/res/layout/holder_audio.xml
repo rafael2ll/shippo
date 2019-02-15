@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="end"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/small_padding"
+        android:layout_marginStart="@dimen/small_padding"
+        android:layout_marginTop="@dimen/xsmall_padding"
+        android:layout_weight="7.5"
+        app:cardBackgroundColor="@color/dirty_white"
+        app:cardCornerRadius="@dimen/small_padding"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="true">
+
+        <ImageView
+            android:id="@+id/holder_audio_iv_selected"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_cancel_accent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/small_padding">
+
+                <ImageView
+                    android:id="@+id/holder_audio_iv_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_file_download_white" />
+
+                <ProgressBar
+                    android:id="@+id/holder_audio_pb_download"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:theme="@style/WhiteTextInputLayoutTheme"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/dirty_white"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <SeekBar
+                    android:id="@+id/holder_audio_seekbar_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingEnd="@dimen/small_padding"
+                    android:paddingStart="@dimen/small_padding"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/holder_audio_tv_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:text="00:00"
+                        android:textColor="@color/grey_800"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/holder_audio_tv_sent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="end"
+                        android:text="12:23"
+                        android:textColor="@color/grey_700"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/holder_audio_iv_send_state"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_watch_later" />
+</LinearLayout>
